@@ -22,7 +22,8 @@ Let's begin with the standard imports:
 %matplotlib inline
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns; sns.set()
+import seaborn as sns
+sns.set()
 ```
 
 ## Generate Data for analysis
@@ -79,8 +80,8 @@ Below is how we extract them from a learned PCA model.
 print(pca.components_)
 ```
 
-    [[ 0.94446029  0.32862557]
-     [ 0.32862557 -0.94446029]]
+    [[-0.94446029 -0.32862557]
+     [-0.32862557  0.94446029]]
 
 
 
@@ -90,7 +91,7 @@ print(pca.components_)
 print(pca.explained_variance_)
 ```
 
-    [ 0.75871884  0.01838551]
+    [0.7625315 0.0184779]
 
 
 Based on above, the total variance explained by both principal components is around 0.77. 
